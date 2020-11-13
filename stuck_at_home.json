@@ -1,0 +1,138 @@
+{
+  "__metadata__": {
+    "title": "stuck_at_home",
+    "start": "mudroom"
+  },
+  "mudroom": {
+    "name": "mudroom",
+    "description": "You have entered your house. What now?",
+    "exits": [
+      {
+        "destination": "staircase",
+        "description": "You go up the staircase to the second floor."
+      },
+      {
+        "destination": "kitchen",
+        "description": "You're hungry."
+      }
+    ],
+    "items": [
+      "Shoes"
+    ]
+  },
+  "basement": {
+    "name": "basement",
+    "description": "The basement is scary!!!",
+    "exits": [],
+    "items": [],
+    "ends_game": true
+  },
+  "bedroom": {
+    "name": "bedroom",
+    "description": "You're in your bedroom. Where else could you go?",
+    "exits": [
+      {
+        "destination": "staircase",
+        "description": "You go back to the stairs."
+      },
+      {
+        "destination": "bathroom",
+        "description": "You have to fo to the bathroom."
+      }
+    ],
+    "items": [
+      "Bed"
+    ]
+  },
+  "bathroom": {
+    "name": "bathroom",
+    "description": "You're in the bathroom. You had to go.",
+    "exits": [
+      {
+        "destination": "staircase",
+        "description": "You go back to the stairs."
+      },
+      {
+        "destination": "bedroom",
+        "description": "You are tired. You need a nap."
+      },
+      {
+        "destination": "living room",
+        "description": "You went to the bathroom. You want to watch more TV."
+      }
+    ],
+    "items": [
+      "Soap"
+    ]
+  },
+  "living room": {
+    "name": "living room",
+    "description": "You're in the living room. Watch some TV!",
+    "exits": [
+      {
+        "destination": "staircase",
+        "description": "You're bored of the TV"
+      },
+      {
+        "destination": "bathroom",
+        "description": "You've watched a lot of TV. You have to go to the bathroom."
+      }
+    ],
+    "items": [
+      "television"
+    ]
+  },
+  "outside": {
+    "name": "outside",
+    "description": "You're outside! There's COVID out here!!!",
+    "exits": [],
+    "items": [],
+    "ends_game": true
+  },
+  "kitchen": {
+    "name": "kitchen",
+    "description": "Nice, you're in the kitchen for the tenth time today! Is there any food in the fridge this time?",
+    "exits": [
+      {
+        "destination": "mudroom",
+        "description": "Go back to mudroom."
+      }
+    ],
+    "items": [
+      "No food"
+    ]
+  },
+  "staircase": {
+    "name": "staircase",
+    "description": "Should you climb again?",
+    "exits": [
+      {
+        "destination": "mudroom",
+        "description": "You go back down the stairs."
+      },
+      {
+        "destination": "living room",
+        "description": "You hear the TV. Sounds binge-worthy"
+      },
+      {
+        "destination": "bedroom",
+        "description": "You want to lay in your bed."
+      },
+      {
+        "destination": "bathroom",
+        "description": "You go to the bathroom."
+      },
+      {
+        "destination": "basement",
+        "description": "You are bored of everywhere else in your house. You decide to venture into the basement."
+      },
+      {
+        "destination": "outside",
+        "description": "You are tired of being stuck inside."
+      }
+    ],
+    "items": [
+      "Stairs"
+    ]
+  }
+}
